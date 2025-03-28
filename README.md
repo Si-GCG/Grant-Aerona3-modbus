@@ -39,10 +39,26 @@ Again for your own sanity check your cables!
 
 Once connected you navigate to the IP address of the Waveshare (the default is: 192.168.1.200) and all you need to do is set it up with the following settings. 
 
-![waveshare](https://github.com/user-attachments/assets/bc2f6f15-3973-46d5-9342-e78140234580)
-
 I would recommend you don't go down the very long rabbit hole of following the Waveshare instructions.
-
+change the following:
+```
+Device Port: 502
+device web port: 80
+Work Mode: TCP Server
+Destination Port: 502
+IP mode: static
+Baud Rate: 19200
+Databits: 8
+Parity: none
+Stopbits: 2Flow Control: none
+No Data Restart: Disable
+No Data Restart Time: 300
+Reconnect time: 12
+Protocol: Modbus TCP to RTU
+Instruction Time Out 480
+Enable Multi host: Yes
+RS485 conflict time gap:200
+```
 I have attached the modbus integration settings but here is a description of the main points:
 ```
 modbus:
