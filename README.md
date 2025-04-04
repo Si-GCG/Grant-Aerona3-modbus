@@ -130,11 +130,11 @@ I want to monitor power consumption and costs but am finding that the Energy car
  I have also found out that the latest unofficial Octopus integration (Home Assistant Octopus Energy in HACS) allows you to track individual devices at the correct rates throughout the day. As the Grant input register for power outputs in watts this needs to be converted to kWh for the octopus integration to work.
 
       - platform: integration
-    source: sensor.Current_consumption_value
-    name: Daily_Energy_Usage
-    unique_id: daily_energy_usage
-    unit_prefix: k
-    round: 2
+        source: sensor.Current_consumption_value
+        name: Daily_Energy_Usage
+        unique_id: daily_energy_usage
+        unit_prefix: k
+        round: 2
  
 I have added a few utility meters:
 
