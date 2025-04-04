@@ -127,8 +127,32 @@ I want to monitor power consumption and costs but am finding that the Energy car
         scan_interval: 10
         device_class: power
 
-This outputs the correct current power draw from the ASHP but displays it in Watts converting it to kW and the into kWh and then into time of use tariffs is proving difficult!
+ I have also found out that the latest unofficial Octopus integration (Home Assistant Octopus Energy in HACS) allows you to track individual devices at the correct rates throughout the day. As the Grant input register for power outputs in watts this needs to be converted to kWh for the octopus integration to work.
 
+      - platform: integration
+    source: sensor.Current_consumption_value
+    name: Daily_Energy_Usage
+    unique_id: daily_energy_usage
+    unit_prefix: k
+    round: 2
+ 
+I have added a few utility meters:
+
+```
+utility_meter:
+  daily_energy:
+    unique_id: daily_energy
+    source: sensor.daily_energy_usage
+    cycle: daily
+  weekly_energy:
+    unique_id: weekly_energy
+    source: sensor.daily_energy_usage
+    cycle: weekly
+  monthly_energy:
+    unique_id: monthly_energy
+    source: sensor.daily_energy_usage
+    cycle: monthly
+``` 
 I have installed the following addons through HACS https://www.hacs.xyz/docs/use/download/download/ 
 
 ```
