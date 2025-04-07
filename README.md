@@ -153,6 +153,11 @@ utility_meter:
     source: sensor.daily_energy_usage
     cycle: monthly
 ``` 
+I have now installed EMONCMS here is a great video from Speak to the Geek telling you how to set it up: 
+https://www.youtube.com/watch?v=VOGLjONINqM
+I have also installed Ai Automation Suggester which will also help
+https://github.com/ITSpecialist111/ai_automation_suggester
+
 I have installed the following addons through HACS https://www.hacs.xyz/docs/use/download/download/ 
 
 ```
