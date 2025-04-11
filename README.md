@@ -29,17 +29,17 @@ I emailed Grant for a technical document on the modbus registers and their respo
 
 This led me to this project https://github.com/aerona-chofu-ashp/modbus and my own research on the subject. 
 
-I chose the Waveshare POE variant as I had a cable run into where the pipework for the ASHP was going to come into the house so I got the (insert rude comment!) installers to run some sheilded external CAT7 cable from the "plant room" to the ASHP. You can just as easily do this project with USB or wireless controllers. 
+I chose the Wavehare POE variant as I had a cable run into where the pipework for the ASHP was going to come into the house so I got the (insert rude comment!) installers to run some sheilded external CAT7 cable from the "plant room" to the ASHP. You can just as easily do this project with USB or wireless controllers. 
 
-Once installed I installed the Wavesure into a Din Rail Enclosure (you do need to modify it for the waveshare to fit (file down the top and bottom edges). Once connected then the fun began (because I am an idiot!) Layer 1 people! check and double check your cables!!!!! If it doesn't work straight away it is the cables. Both my connection to the heat pump and my ethernet cable were badly terminated,which led to this!
+Once installed I installed the Wavehare into a Din Rail Enclosure (you do need to modify it for the wavehare to fit (file down the top and bottom edges). Once connected then the fun began (because I am an idiot!) Layer 1 people! check and double check your cables!!!!! If it doesn't work straight away it is the cables. Both my connection to the heat pump and my ethernet cable were badly terminated,which led to this!
 
 ![4271CC76-96B0-4770-8885-34C9EBA1A256_1_102_o](https://github.com/user-attachments/assets/a50f47af-0c95-491c-a554-a90b82fcd40d)
 
 Again for your own sanity check your cables!
 
-Once connected you navigate to the IP address of the Waveshare (the default is: 192.168.1.200) and all you need to do is set it up with the following settings. 
+Once connected you navigate to the IP address of the Wavehare (the default is: 192.168.1.200) and all you need to do is set it up with the following settings. 
 
-I would recommend you don't go down the very long rabbit hole of following the Waveshare instructions.
+I would recommend you don't go down the very long rabbit hole of following the Wavehare instructions.
 change the following:
 ```
 Device Port: 502
@@ -157,6 +157,7 @@ I have now installed EMONCMS here is a great video from Speak to the Geek tellin
 https://www.youtube.com/watch?v=VOGLjONINqM
 I have also installed Ai Automation Suggester which will also help
 https://github.com/ITSpecialist111/ai_automation_suggester
+This was a pig to configure when you enter your API keys you have to change the default value to the exact name of the latest model you want to use.
 
 I have installed the following addons through HACS https://www.hacs.xyz/docs/use/download/download/ 
 
