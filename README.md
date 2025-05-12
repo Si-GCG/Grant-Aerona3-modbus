@@ -135,7 +135,9 @@ I want to monitor power consumption and costs but am finding that the Energy car
         unique_id: daily_energy_usage
         unit_prefix: k
         round: 2
- 
+        
+I have added a thermistor into the tank's sensor pocket and connected it up to terminal 7-8 on the PCB and turned that on (Param 51-07 or coil register 18 set to 1 to enable) 
+
 I have added a few utility meters:
 
 ```
